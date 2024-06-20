@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olympic Winners Map</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Olympic Games Winning Country Visualization</h1>
+      <p>Click on a country to show its Olympic Games statistics.</p>
+    </header>
+    <div class="content">
+      <div id="map"></div>
+      <div id="info">
+        <div id="name"></div>
+        <div id="topSports"></div>
+        <div id="pieChart">
+          <canvas id="medalPieChart"></canvas>
+        </div>
+        <div id="slider"></div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

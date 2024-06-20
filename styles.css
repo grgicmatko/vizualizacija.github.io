@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#info {
+  height: 80%;
+  background-color: white;
+  display: none;
+  overflow-y: auto;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  align-items: center;
+}
+
+#pieChart {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scale {
+  position: relative;
+  width: 60%;
+  height: 10px;
+  margin-top: 10px;
+  background-color: #999;
+}
+
+.scale-visualization {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5px;
+}
+
+.slider {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider p {
+  text-align: center;
+}
+h4 {
+  margin-top: 3rem;
+  font-weight: 100;
+}
